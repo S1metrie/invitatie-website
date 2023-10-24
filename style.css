@@ -7,7 +7,12 @@ body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   
 }
-@media (min-width: 457px){}
+@media only screen and (min-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+ 
 nav{
   background: radial-gradient(rgb(210, 203, 15),rgb(0, 0, 0),rgb(0, 0, 0)) ;
   height: 80px;
