@@ -7,7 +7,7 @@ body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   
 }
-@media (max-width: 457px){}
+@media (min-width: 457px){}
 nav{
   background: radial-gradient(rgb(210, 203, 15),rgb(0, 0, 0),rgb(0, 0, 0)) ;
   height: 80px;
