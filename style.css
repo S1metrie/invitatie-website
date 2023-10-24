@@ -1,0 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+nav{
+  background: radial-gradient(rgb(210, 203, 15),rgb(0, 0, 0),rgb(0, 0, 0)) ;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  
+}
+nav ul li a:hover{
+  text-decoration: none;
+  color: rgb(232, 225, 16);
+  padding: 10px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  text-decoration: none;
+ 
+}
+nav ul li a{
+  color: #fff;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase ;
+  text-decoration: none;
+ 
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  
+
+}
+
+.container img{
+  justify-content: center;
+}
+
+
+.container h2{
+  text-align: center;
+}
+
+
+.text h1{
+  font-size: 50px;
+ text-align: center;
+ justify-content:center ;
+ z-index: 1;
+ margin-left: 15px;
+ margin-bottom: 50px;
+ margin-top: 0px;
+ z-index: 1;
+ color:    rgb(0, 0, 0) ;
+}
+.text h2{
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 0px;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+}
+h3{
+  text-align: center;
+  padding: 30px 30px;
+  font-size: 50px;
+  background: radial-gradient(rgb(210, 203, 15),rgb(0, 0, 0),rgb(0, 0, 0)) ;
+  color: #afafaf ;
+}
+.udneh3 a{
+
+  text-decoration: none;
+  color: #afafaf;
+  font-size: 50px;
+}
+.about{
+  padding: 30px 0;
+  text-align: center;
+}
+.Unde-va-avea-loc{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.Unde-va-avea-loc h1:hover{
+  padding: 10px;
+ 
+}
+.about img{
+max-width: 100%;
+border-radius:50% ;
+
+
+}
+.about p{
+  margin-top: 5px;
+}
+.about h2{
+  margin-top: 10px;
+}
+.containerr{
+  color: #02ffff;
+
+  
+}
+
+li{
+ 
+  list-style: none;
+  display: inline-block;
+  font-size: 10px;
+  padding: 10px;
+ 
+}
+li span{
+  font-size: 5rem;
+  display: block;
+  font-style: italic;
+}
+
+.Locatie h1{
+  background: radial-gradient(rgb(210, 203, 15),rgb(0, 0, 0),rgb(0, 0, 0)) ;
+  color: #afafaf;
+  text-align: center;
+  font-size: 70px;
+  margin-top: 50px ;
+  padding: 30px 30px;
+}
+.Locatie p{
+  text-align: center;
+  margin-top: 80px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.iframee{
+  text-align: center;
+  margin-top: 80px;
+}
+/* @media (min-width: 475px) {} */
+
+.incheiere{
+  padding: 50px 50px;
+  background: radial-gradient(rgb(210, 203, 15),rgb(0, 0, 0),rgb(0, 0, 0)) ;
+  
+
+}
+body .container {
+  background-image: url('poza18.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+ 
+}
+body . {
+  background-image: url('poza18.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+ 
+}
+.Poza18{
+margin-top: 50px;
+justify-content: center;
+display: block;
+max-width: 500px;
+}
+
+
+
+
