@@ -23,22 +23,25 @@
             <form class="search-form">
                 <input type="text" placeholder="Caută produse">
             </form>
-            <a href="cos.html" class="cart">Coș</a>
+            <a href="cos.html" class="cart">Coș (<span id="cart-count">0</span>)</a>
         </div>
     </header>
 
     <section class="about">
         <h2>Coșul de cumpărături</h2>
-        <p>Momentan, coșul este gol. Funcționalitățile de magazin online vor fi adăugate ulterior.</p>
         <table class="cart-table">
-            <tr><th>Produs</th><th>Cantitate</th><th>Preț</th></tr>
-            <tr><td>Costum Termic</td><td>1</td><td>349 RON</td></tr>
-            <tr><td>Bluza Termică</td><td>2</td><td>398 RON</td></tr>
+            <thead>
+                <tr><th>Produs</th><th>Cantitate</th><th>Preț</th><th>Total</th><th></th></tr>
+            </thead>
+            <tbody id="cart-rows"></tbody>
         </table>
+        <p id="cart-total"></p>
+        <button id="clear-cart">Golește coșul</button>
     </section>
 
     <footer>
         <p>&copy; 2025 Brand Moto Termic - Pre-prototip</p>
     </footer>
+    <script src="cart.js"></script>
 </body>
 </html>

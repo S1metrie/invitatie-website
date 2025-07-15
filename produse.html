@@ -23,7 +23,7 @@
             <form class="search-form">
                 <input type="text" placeholder="Caută produse">
             </form>
-            <a href="cos.html" class="cart">Coș</a>
+            <a href="cos.html" class="cart">Coș (<span id="cart-count">0</span>)</a>
         </div>
     </header>
 
@@ -35,31 +35,31 @@
             <img src="poza18.jpg" alt="Costum Iarnă">
             <h3>Costum Termic Iarnă</h3>
             <span class="pret">349 RON</span>
-            <button>Adaugă în coș</button>
+            <button class="add-to-cart" data-name="Costum Termic Iarnă" data-price="349">Adaugă în coș</button>
         </article>
         <article class="produs">
             <img src="poza19.jpg" alt="Set Vară">
             <h3>Set Vară 2 Piese</h3>
             <span class="pret">299 RON</span>
-            <button>Adaugă în coș</button>
+            <button class="add-to-cart" data-name="Set Vară 2 Piese" data-price="299">Adaugă în coș</button>
         </article>
         <article class="produs">
             <img src="poza18.jpg" alt="Cagulă">
             <h3>Cagulă Moto</h3>
             <span class="pret">79 RON</span>
-            <button>Adaugă în coș</button>
+            <button class="add-to-cart" data-name="Cagulă Moto" data-price="79">Adaugă în coș</button>
         </article>
         <article class="produs">
             <img src="https://via.placeholder.com/260x200" alt="Bluza">
             <h3>Bluza Termică</h3>
             <span class="pret">199 RON</span>
-            <button>Adaugă în coș</button>
+            <button class="add-to-cart" data-name="Bluza Termică" data-price="199">Adaugă în coș</button>
         </article>
         <article class="produs">
             <img src="https://via.placeholder.com/260x200" alt="Pantaloni">
             <h3>Pantaloni Termici</h3>
             <span class="pret">219 RON</span>
-            <button>Adaugă în coș</button>
+            <button class="add-to-cart" data-name="Pantaloni Termici" data-price="219">Adaugă în coș</button>
         </article>
     </div>
 </section>
@@ -68,5 +68,6 @@
     <footer>
         <p>&copy; 2025 Brand Moto Termic - Pre-prototip</p>
     </footer>
+    <script src="cart.js"></script>
 </body>
 </html>

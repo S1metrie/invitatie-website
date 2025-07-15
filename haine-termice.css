@@ -261,6 +261,16 @@ nav a:hover {
     padding: 0.5rem;
     text-align: left;
 }
+.cart-table button, #clear-cart {
+    background-color: #C00000;
+    color: #fff;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+.cart-table button:hover, #clear-cart:hover {
+    background-color: #a00000;
+}
 
 footer {
     text-align: center;
