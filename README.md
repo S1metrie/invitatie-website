@@ -1,9 +1,9 @@
 # Brand Haine Termice Moto
 
-Acest depozit contine cod sursa pentru o pagina de prezentare a unui brand de echipamente termice moto. Pentru a vedea site-ul local:
+Acest depozit conține codul sursă pentru un mic site de prezentare dedicat echipamentelor moto termice. Pentru a vizualiza paginile local:
 
-1. Descarcati sau clonati acest depozit pe calculatorul dumneavoastra.
-2. Deschideti folderul si deschideti fisierul `haine-termice.html` intr-un browser modern.
-3. Veti putea naviga intre sectiunile de prezentare, colectii si contact.
+1. Descărcați sau clonați acest depozit pe calculatorul dumneavoastră.
+2. Deschideți fișierul `acasa.html` într-un browser modern.
+3. Navigați folosind meniul către paginile **Despre**, **Colecții**, **Produse**, **Contact** și **Coș**.
 
-Codex nu poate lansa un browser grafic in mediul actual, asa ca este necesar sa urmati pasii de mai sus pe propriul calculator.
+Codex nu poate deschide un browser grafic în acest mediu, așa că urmați pașii de mai sus pe propriul calculator.
