@@ -1,25 +1,29 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+* {
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #f5f5f5;
+    margin: 0;
+}
+
+.site-header {
+    background-color: #000000;
     display: flex;
     align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-nav {
-    flex: 1;
-}
-
-header h1 {
-    margin: 0;
-    flex: 1;
-    text-align: left;
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    color: #C00000;
+    font-size: 2rem;
+    margin-right: 1rem;
 }
 
 nav ul {
@@ -28,97 +32,172 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex: 1;
 }
 
 nav li {
-    display: inline-block;
     margin: 0 0.5rem;
 }
 
 nav a {
-    color: #fff;
+    color: #f5f5f5;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    background-color: #555;
     border-radius: 4px;
 }
 
 nav a:hover {
-    background-color: #444;
-}
-
-.cta {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #d9534f;
-    color: #fff;
-    border-radius: 4px;
-    text-decoration: none;
-}
-
-.cta:hover {
-    background-color: #c9302c;
+    background-color: #C00000;
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('poza18.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('poza18.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 6rem 1rem;
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    margin: 0 0 1rem;
+}
+
+.cta {
+    background-color: #C00000;
     color: #fff;
-    padding: 4rem 2rem;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.cta:hover {
+    background-color: #a00000;
+}
+
+.about,
+.collections,
+.technology,
+.produse,
+.contact {
+    padding: 2rem 1rem;
+}
+
+.collections .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.collection {
+    background-color: #111;
+    border: 1px solid #333;
+    padding: 1rem;
+    width: 250px;
+    margin: 0.5rem;
     text-align: center;
 }
 
-.hero h2 {
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
+.technology img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
 }
 
-.hero p {
-    font-size: 1.2rem;
-}
-
-.produse {
+.product-grid {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 1rem;
+    justify-content: center;
 }
 
 .produs {
-    width: 300px;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
+    background-color: #111;
+    border: 1px solid #333;
     margin: 1rem;
     padding: 1rem;
+    width: 260px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-}
-
-.produs:hover {
-    transform: translateY(-5px);
 }
 
 .produs img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    transition: transform 0.3s;
+}
+
+.produs img:hover {
+    transform: scale(1.1);
+}
+
+.produs button {
+    margin-top: 0.5rem;
+    background-color: #C00000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.produs button:hover {
+    background-color: #a00000;
 }
 
 .pret {
     display: block;
     margin-top: 0.5rem;
     font-weight: bold;
-    color: #d9534f;
+    color: #C00000;
 }
 
-.contact {
-    background-color: #eee;
-    padding: 1rem;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    border: none;
+}
+
+.contact-form button {
+    background-color: #C00000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.social {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.social a {
+    color: #C00000;
+    margin: 0 0.5rem;
 }
 
 footer {
     text-align: center;
-    background-color: #333;
-    color: #fff;
     padding: 1rem;
+    background-color: #000000;
+    color: #f5f5f5;
 }
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .collections .grid,
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

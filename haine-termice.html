@@ -3,61 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magazin Haine Termice</title>
+    <title>Brand Haine Termice Moto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="haine-termice.css">
 </head>
 <body>
-    <header>
-        <h1>Magazin Haine Termice</h1>
+    <header class="site-header">
+        <div class="logo">S</div>
         <nav>
             <ul>
-                <li><a href="index.html">Acasa</a></li>
+                <li><a href="#acasa">Acasa</a></li>
+                <li><a href="#despre">Despre</a></li>
+                <li><a href="#colectii">Colectii</a></li>
                 <li><a href="#produse">Produse</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Confort si caldura in orice sezon</h2>
-        <p>Descopera gama noastra de haine termice pentru intreaga familie.</p>
-        <a class="cta" href="#produse">Vezi produsele</a>
+    <section class="hero" id="acasa">
+        <h1>Stay Protected. Stay Fast.</h1>
+        <a class="cta" href="#colectii">Vezi Colecția</a>
     </section>
 
-    <main>
-        <section id="produse" class="produse">
+    <section id="despre" class="about">
+        <h2>Despre Brand</h2>
+        <p>Suntem un brand românesc inspirat de spiritul nordic-german, dedicat performanței pe motocicletă. Folosim materiale tehnice cu zone izolatoare și strat windproof, concentrându-ne pe protecția pieptului. Site-ul se află în stadiu de pre-prototip.</p>
+    </section>
+
+    <section id="colectii" class="collections">
+        <h2>Colecții</h2>
+        <div class="grid">
+            <div class="collection">
+                <h3>Iarnă</h3>
+                <p>One-piece termo complet</p>
+            </div>
+            <div class="collection">
+                <h3>Vară</h3>
+                <p>Seturi bărbat și femeie în două piese</p>
+            </div>
+            <div class="collection">
+                <h3>Accesorii</h3>
+                <p>Cagulă și alte accesorii</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tehnologie" class="technology">
+        <h2>Tehnologie</h2>
+        <p>Produsele noastre combină straturi de softshell, material windproof și fleece cu interior respirabil pentru confort maxim.</p>
+        <img src="poza2.jpg" alt="Stratificarea pieptului">
+    </section>
+
+    <section id="produse" class="produse">
+        <h2>Shop / Produse</h2>
+        <div class="product-grid">
             <article class="produs">
-                <img src="poza18.jpg" alt="Bluza Termica">
-                <h2>Bluza Termica</h2>
-                <p>O bluza confortabila si calduroasa perfecta pentru activitati in aer liber.</p>
-                <span class="pret">99 RON</span>
+                <img src="poza18.jpg" alt="Costum Iarnă">
+                <h3>Costum Termic Iarnă</h3>
+                <span class="pret">349 RON</span>
+                <button>Adaugă în coș</button>
             </article>
             <article class="produs">
-                <img src="poza19.jpg" alt="Pantaloni Termici">
-                <h2>Pantaloni Termici</h2>
-                <p>Pantaloni usori ce ofera protectie impotriva frigului si umiditatii.</p>
-                <span class="pret">149 RON</span>
+                <img src="poza19.jpg" alt="Set Vară">
+                <h3>Set Vară 2 Piese</h3>
+                <span class="pret">299 RON</span>
+                <button>Adaugă în coș</button>
             </article>
             <article class="produs">
-                <img src="poza18.jpg" alt="Jacheta Termica">
-                <h2>Jacheta Termica</h2>
-                <p>Jacheta impermeabila cu captuseala din fleece pentru zile reci.</p>
-                <span class="pret">199 RON</span>
+                <img src="poza18.jpg" alt="Cagulă">
+                <h3>Cagulă Moto</h3>
+                <span class="pret">79 RON</span>
+                <button>Adaugă în coș</button>
             </article>
-            <article class="produs">
-                <img src="poza19.jpg" alt="Manusi Termice">
-                <h2>Manusi Termice</h2>
-                <p>Manusi elastice ce pastreaza caldura fara a limita miscarea.</p>
-                <span class="pret">59 RON</span>
-            </article>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>Email: contact@termic-shop.ro</p>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Precomandă / Contact</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nume" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mesaj" rows="4"></textarea>
+            <button type="submit">Trimite</button>
+        </form>
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2023 Termic Shop</p>
+        <p>&copy; 2025 Brand Moto Termic - Pre-prototip</p>
     </footer>
 </body>
 </html>
