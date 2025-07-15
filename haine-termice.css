@@ -2,8 +2,12 @@
     --bg-color: #000000;
     --text-color: #f5f5f5;
     --accent-color: #C00000;
+    --surface-color: #111;
+    --border-color: #333;
     --bg-light: #ffffff;
     --text-light: #000000;
+    --surface-light: #f5f5f5;
+    --border-light: #cccccc;
 }
 
 * {
@@ -20,6 +24,8 @@ body {
 body.light {
     --bg-color: var(--bg-light);
     --text-color: var(--text-light);
+    --surface-color: var(--surface-light);
+    --border-color: var(--border-light);
 }
 
 .site-header {
@@ -75,9 +81,9 @@ nav a:hover {
 
 .search-form input {
     padding: 0.35rem 0.5rem;
-    border: 1px solid #333;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
-    background-color: #111;
+    background-color: var(--surface-color);
     color: var(--text-color);
 }
 
@@ -136,12 +142,12 @@ nav a:hover {
 }
 
 .collections.new {
-    background-color: #111;
+    background-color: var(--surface-color);
 }
 
 .collection {
-    background-color: #111;
-    border: 1px solid #333;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
     padding: 1rem;
     width: 250px;
     margin: 0.5rem;
@@ -158,8 +164,8 @@ nav a:hover {
 .feature {
     width: 220px;
     text-align: center;
-    background-color: #111;
-    border: 1px solid #333;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
     padding: 1rem;
 }
 .feature img {
@@ -176,7 +182,7 @@ nav a:hover {
 .gallery-grid img {
     width: 200px;
     height: auto;
-    border: 1px solid #333;
+    border: 1px solid var(--border-color);
 }
 
 .technology img {
@@ -192,8 +198,8 @@ nav a:hover {
 }
 
 .produs {
-    background-color: #111;
-    border: 1px solid #333;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
     margin: 1rem;
     padding: 1rem;
     width: 260px;
@@ -284,7 +290,7 @@ nav a:hover {
     border-collapse: collapse;
 }
 .cart-table th, .cart-table td {
-    border: 1px solid #333;
+    border: 1px solid var(--border-color);
     padding: 0.5rem;
     text-align: left;
 }
@@ -294,6 +300,10 @@ nav a:hover {
     border: none;
     padding: 0.25rem 0.5rem;
     cursor: pointer;
+}
+.qty-btn {
+    padding: 0.2rem 0.4rem;
+    margin: 0 0.25rem;
 }
 .cart-table button:hover, #clear-cart:hover {
     background-color: #a00000;
@@ -315,6 +325,20 @@ footer {
     .product-grid {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .produs,
+    .collection {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .produs,
+    .collection {
+        width: 260px;
     }
 }
 

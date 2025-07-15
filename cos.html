@@ -39,8 +39,13 @@
                 <tr><th>Produs</th><th>Cantitate</th><th>Preț</th><th>Total</th><th></th></tr>
             </thead>
             <tbody id="cart-rows"></tbody>
+            <tfoot>
+                <tr><td colspan="3">Subtotal</td><td id="subtotal"></td><td></td></tr>
+                <tr><td colspan="3">TVA 19%</td><td id="tva"></td><td></td></tr>
+                <tr><td colspan="3">Cost livrare</td><td id="shipping"></td><td></td></tr>
+                <tr><td colspan="3"><strong>Total</strong></td><td id="cart-total"></td><td></td></tr>
+            </tfoot>
         </table>
-        <p id="cart-total"></p>
         <button id="clear-cart">Golește coșul</button>
     </section>
 

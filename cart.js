@@ -30,27 +30,46 @@ function addToCart(name, price) {
   }
 }
 
+function changeQty(index, delta) {
+  let cart = loadCart();
+  if (!cart[index]) return;
+  cart[index].qty += delta;
+  if (cart[index].qty <= 0) {
+    cart.splice(index, 1);
+  }
+  saveCart(cart);
+}
+
 function renderCart() {
   const rows = document.getElementById('cart-rows');
   if (!rows) return;
   const cart = loadCart();
   rows.innerHTML = '';
-  let total = 0;
+  let subtotal = 0;
   cart.forEach((item, index) => {
     const row = document.createElement('tr');
     row.innerHTML =
       `<td>${item.name}</td>` +
-      `<td>${item.qty}</td>` +
+      `<td><button class="qty-btn decrease" data-index="${index}">-</button>` +
+      `<span class="qty">${item.qty}</span>` +
+      `<button class="qty-btn increase" data-index="${index}">+</button></td>` +
       `<td>${item.price} RON</td>` +
       `<td>${item.qty * item.price} RON</td>` +
       `<td><button class="remove" data-index="${index}">Șterge</button></td>`;
     rows.appendChild(row);
-    total += item.qty * item.price;
+    subtotal += item.qty * item.price;
   });
+  const shipping = cart.length ? 20 : 0;
+  const vat = subtotal * 0.19;
+  const total = subtotal + vat + shipping;
+  const sEl = document.getElementById('subtotal');
+  const vEl = document.getElementById('tva');
+  const shEl = document.getElementById('shipping');
   const totalEl = document.getElementById('cart-total');
-  if (totalEl) {
-    totalEl.textContent = cart.length ? `Total: ${total} RON` : 'Coșul este gol';
-  }
+  if (sEl) sEl.textContent = cart.length ? `${subtotal.toFixed(2)} RON` : '0 RON';
+  if (vEl) vEl.textContent = cart.length ? `${vat.toFixed(2)} RON` : '0 RON';
+  if (shEl) shEl.textContent = cart.length ? `${shipping.toFixed(2)} RON` : '0 RON';
+  if (totalEl) totalEl.textContent = cart.length ? `${total.toFixed(2)} RON` : 'Coșul este gol';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -64,16 +83,22 @@ document.addEventListener('DOMContentLoaded', () => {
   if (rows) {
     renderCart();
     rows.addEventListener('click', (e) => {
+      const index = e.target.dataset.index;
       if (e.target.classList.contains('remove')) {
-        const index = e.target.dataset.index;
         let cart = loadCart();
         cart.splice(index, 1);
         saveCart(cart);
-        renderCart();
-        updateCartCount();
-        if (typeof showToast === 'function') {
-          showToast('Produs șters');
-        }
+      } else if (e.target.classList.contains('increase')) {
+        changeQty(index, 1);
+      } else if (e.target.classList.contains('decrease')) {
+        changeQty(index, -1);
+      } else {
+        return;
+      }
+      renderCart();
+      updateCartCount();
+      if (typeof showToast === 'function') {
+        showToast('Coș actualizat');
       }
     });
     const clearBtn = document.getElementById('clear-cart');
