@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catalog de haine termice moto pentru toate sezoanele.">
     <title>Produse - Brand Haine Termice Moto</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="haine-termice.css">
@@ -24,6 +25,7 @@
                 <input type="text" placeholder="Caută produse">
             </form>
             <a href="cos.html" class="cart">Coș (<span id="cart-count">0</span>)</a>
+            <button id="dark-toggle" aria-label="Comută modul">🌓</button>
         </div>
     </header>
 
@@ -33,43 +35,59 @@
     <p id="search-message"></p>
     <div class="product-grid">
         <article class="produs">
-            <img src="poza18.jpg" alt="Costum Iarnă">
+            <img src="poza18.jpg" alt="Costum Iarnă" loading="lazy">
             <h3>Costum Termic Iarnă</h3>
             <span class="pret">349 RON</span>
             <button class="add-to-cart" data-name="Costum Termic Iarnă" data-price="349">Adaugă în coș</button>
         </article>
         <article class="produs">
-            <img src="poza19.jpg" alt="Set Vară">
+            <img src="poza19.jpg" alt="Set Vară" loading="lazy">
             <h3>Set Vară 2 Piese</h3>
             <span class="pret">299 RON</span>
             <button class="add-to-cart" data-name="Set Vară 2 Piese" data-price="299">Adaugă în coș</button>
         </article>
         <article class="produs">
-            <img src="poza18.jpg" alt="Cagulă">
+            <img src="poza18.jpg" alt="Cagulă" loading="lazy">
             <h3>Cagulă Moto</h3>
             <span class="pret">79 RON</span>
             <button class="add-to-cart" data-name="Cagulă Moto" data-price="79">Adaugă în coș</button>
         </article>
         <article class="produs">
-            <img src="https://via.placeholder.com/260x200" alt="Bluza">
+            <img src="https://via.placeholder.com/260x200" alt="Bluza" loading="lazy">
             <h3>Bluza Termică</h3>
             <span class="pret">199 RON</span>
             <button class="add-to-cart" data-name="Bluza Termică" data-price="199">Adaugă în coș</button>
         </article>
         <article class="produs">
-            <img src="https://via.placeholder.com/260x200" alt="Pantaloni">
+            <img src="https://via.placeholder.com/260x200" alt="Pantaloni" loading="lazy">
             <h3>Pantaloni Termici</h3>
             <span class="pret">219 RON</span>
             <button class="add-to-cart" data-name="Pantaloni Termici" data-price="219">Adaugă în coș</button>
         </article>
     </div>
-</section>
-
+    <section class="similar">
+        <h2>Produse similare</h2>
+        <div class="product-grid">
+            <article class="produs">
+                <img src="poza18.jpg" alt="Model Similar" loading="lazy">
+                <h3>Model Similar</h3>
+                <span class="pret">259 RON</span>
+                <button class="add-to-cart" data-name="Model Similar" data-price="259">Adaugă în coș</button>
+            </article>
+            <article class="produs">
+                <img src="poza19.jpg" alt="Alt Model" loading="lazy">
+                <h3>Alt Model</h3>
+                <span class="pret">189 RON</span>
+                <button class="add-to-cart" data-name="Alt Model" data-price="189">Adaugă în coș</button>
+            </article>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 Brand Moto Termic - Pre-prototip</p>
     </footer>
     <script src="cart.js"></script>
     <script src="search.js"></script>
+    <script src="site.js"></script>
 </body>
 </html>

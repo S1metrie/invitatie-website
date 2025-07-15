@@ -25,6 +25,9 @@ function addToCart(name, price) {
   }
   saveCart(cart);
   updateCartCount();
+  if (typeof showToast === 'function') {
+    showToast('Produs ad\u0103ugat!');
+  }
 }
 
 function renderCart() {
@@ -68,16 +71,22 @@ document.addEventListener('DOMContentLoaded', () => {
         saveCart(cart);
         renderCart();
         updateCartCount();
+        if (typeof showToast === 'function') {
+          showToast('Produs șters');
+        }
       }
     });
     const clearBtn = document.getElementById('clear-cart');
-    if (clearBtn) {
-      clearBtn.addEventListener('click', () => {
-        saveCart([]);
-        renderCart();
-        updateCartCount();
-      });
-    }
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          saveCart([]);
+          renderCart();
+          updateCartCount();
+          if (typeof showToast === 'function') {
+            showToast('Coș golit');
+          }
+        });
+      }
   }
 
   updateCartCount();
