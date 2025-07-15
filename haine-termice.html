@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Echipamente moto termice moderne, create pentru confort urban şi performanţă.">
+    <title>Brand Haine Termice Moto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="haine-termice.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">S</div>
+        <nav>
+            <ul>
+                <li><a href="#acasa">Acasa</a></li>
+                <li><a href="#despre">Despre</a></li>
+                <li><a href="#colectii">Colectii</a></li>
+                <li><a href="#produse">Produse</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <form class="search-form">
+                <input type="text" placeholder="Caută produse">
+            </form>
+            <a href="cos.html" class="cart">Coș (<span id="cart-count">0</span>)</a>
+            <button id="dark-toggle" aria-label="Comută modul">🌓</button>
+        </div>
+    </header>
+
+    <section class="hero" id="acasa">
+        <h1>Stay Protected. Stay Fast.</h1>
+        <a class="cta" href="#colectii">Vezi Colecția</a>
+    </section>
+
+    <section id="despre" class="about">
+        <h2>Despre Brand</h2>
+        <p>Suntem un brand românesc inspirat de spiritul nordic-german, dedicat performanței pe motocicletă. Folosim materiale tehnice cu zone izolatoare și strat windproof, concentrându-ne pe protecția pieptului. Site-ul se află în stadiu de pre-prototip.</p>
+    </section>
+
+    <section id="colectii" class="collections">
+        <h2>Colecții</h2>
+        <div class="grid">
+            <div class="collection">
+                <h3>Iarnă</h3>
+                <p>One-piece termo complet</p>
+            </div>
+            <div class="collection">
+                <h3>Vară</h3>
+                <p>Seturi bărbat și femeie în două piese</p>
+            </div>
+            <div class="collection">
+                <h3>Accesorii</h3>
+                <p>Cagulă și alte accesorii</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tehnologie" class="technology">
+        <h2>Tehnologie</h2>
+        <p>Produsele noastre combină straturi de softshell, material windproof și fleece cu interior respirabil pentru confort maxim.</p>
+        <img src="poza2.jpg" alt="Stratificarea pieptului" loading="lazy">
+    </section>
+
+    <section id="produse" class="produse">
+        <h2>Shop / Produse</h2>
+        <div class="product-grid">
+            <article class="produs">
+                <img src="poza18.jpg" alt="Costum Iarnă" loading="lazy">
+                <h3>Costum Termic Iarnă</h3>
+                <span class="pret">349 RON</span>
+                <button class="add-to-cart" data-name="Costum Termic Iarnă" data-price="349">Adaugă în coș</button>
+            </article>
+            <article class="produs">
+                <img src="poza19.jpg" alt="Set Vară" loading="lazy">
+                <h3>Set Vară 2 Piese</h3>
+                <span class="pret">299 RON</span>
+                <button class="add-to-cart" data-name="Set Vară 2 Piese" data-price="299">Adaugă în coș</button>
+            </article>
+            <article class="produs">
+                <img src="poza18.jpg" alt="Cagulă" loading="lazy">
+                <h3>Cagulă Moto</h3>
+                <span class="pret">79 RON</span>
+                <button class="add-to-cart" data-name="Cagulă Moto" data-price="79">Adaugă în coș</button>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Precomandă / Contact</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nume" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mesaj" rows="4"></textarea>
+            <button type="submit">Trimite</button>
+        </form>
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Brand Moto Termic - Pre-prototip</p>
+    </footer>
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
+    <script src="site.js"></script>
+</body>
+</html>

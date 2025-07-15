@@ -1,0 +1,446 @@
+:root {
+    --bg-color: #000000;
+    --text-color: #f5f5f5;
+    --accent-color: #C00000;
+    --surface-color: #111;
+    --border-color: #333;
+    --bg-light: #ffffff;
+    --text-light: #000000;
+    --surface-light: #f5f5f5;
+    --border-light: #cccccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+body.light {
+    --bg-color: var(--bg-light);
+    --text-color: var(--text-light);
+    --surface-color: var(--surface-light);
+    --border-color: var(--border-light);
+}
+
+.site-header {
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    flex: 1;
+}
+
+nav li {
+    margin: 0 0.5rem;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-form input {
+    padding: 0.35rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+}
+
+.cart {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.35rem 0.75rem;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+}
+
+.cart:hover {
+    background-color: #a00000;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('poza18.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 6rem 1rem;
+}
+
+.hero.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('poza19.jpg');
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    margin: 0 0 1rem;
+}
+
+.cta {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.cta:hover {
+    background-color: #a00000;
+}
+
+.about,
+.collections,
+.technology,
+.produse,
+.contact,
+.home-products,
+.similar {
+    padding: 2rem 1rem;
+}
+
+.collections .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.collections.new {
+    background-color: var(--surface-color);
+}
+
+.collection {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    width: 250px;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+.feature {
+    width: 220px;
+    text-align: center;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+}
+.feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.gallery-grid img {
+    width: 200px;
+    height: auto;
+    border: 1px solid var(--border-color);
+}
+
+.technology img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.filter-bar {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.filter-bar button {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.filter-bar button.active,
+.filter-bar button:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produs {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    margin: 1rem;
+    padding: 1rem;
+    width: 260px;
+    text-align: center;
+}
+
+.produs img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.produs img:hover {
+    transform: scale(1.1);
+}
+
+.produs button {
+    margin-top: 0.5rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#search-message {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.produs button:hover {
+    background-color: #a00000;
+    transform: translateY(-3px);
+}
+
+.pret {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    border: none;
+}
+
+.contact-form button {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-top: 1rem;
+    text-align: center;
+}
+.map {
+    max-width: 100%;
+    margin-top: 0.5rem;
+}
+.tech-extra {
+    display: none;
+    margin-top: 1rem;
+}
+.tech-extra.visible {
+    display: block;
+}
+#more-tech {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.social {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.social a {
+    color: var(--accent-color);
+    margin: 0 0.5rem;
+}
+
+.cart-table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.cart-table th, .cart-table td {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    text-align: left;
+}
+.cart-table button, #clear-cart {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+.qty-btn {
+    padding: 0.2rem 0.4rem;
+    margin: 0 0.25rem;
+}
+.cart-table button:hover, #clear-cart:hover {
+    background-color: #a00000;
+}
+
+.cart-table td:first-child {
+    width: 40%;
+}
+.cart-table td:nth-child(2),
+.cart-table td:nth-child(3),
+.cart-table td:nth-child(4),
+.cart-table td:nth-child(5) {
+    width: 15%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .collections .grid,
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .produs,
+    .collection {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .produs,
+    .collection {
+        width: 260px;
+    }
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.progress .step {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid var(--accent-color);
+    margin: 0 0.25rem;
+    color: var(--text-color);
+}
+
+.progress .active {
+    background-color: var(--accent-color);
+}
+
+#dark-toggle {
+    background: none;
+    border: 1px solid var(--accent-color);
+    color: var(--text-color);
+    padding: 0.35rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#dark-toggle:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.toast {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+.toast.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+

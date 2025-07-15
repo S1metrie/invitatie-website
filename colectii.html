@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecții - Brand Haine Termice Moto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="haine-termice.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">S</div>
+        <nav>
+            <ul>
+                <li><a href="acasa.html">Acasa</a></li>
+                <li><a href="despre.html">Despre</a></li>
+                <li><a href="colectii.html">Colectii</a></li>
+                <li><a href="produse.html">Produse</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <form class="search-form">
+                <input type="text" placeholder="Caută produse">
+            </form>
+            <a href="cos.html" class="cart">Coș (<span id="cart-count">0</span>)</a>
+            <button id="dark-toggle" aria-label="Comută modul">🌓</button>
+        </div>
+    </header>
+
+    <section class="collections" id="colectii">
+        <h2>Colecții</h2>
+        <p>Fiecare colectie este gandita pentru performanta in orice anotimp.</p>
+        <div class="grid">
+            <a href="produse.html?filter=iarna" class="collection">
+                <img src="poza18.jpg" alt="Colecția Iarnă">
+                <h3>Iarnă</h3>
+                <p>One-piece termo complet cu protecție maximă la frig.</p>
+            </a>
+            <a href="produse.html?filter=vara" class="collection">
+                <img src="poza19.jpg" alt="Colecția Vară">
+                <h3>Vară</h3>
+                <p>Seturi ușoare în două piese, pentru bărbați și femei.</p>
+            </a>
+            <a href="produse.html?filter=unisex" class="collection">
+                <img src="poza2.jpg" alt="Accesorii">
+                <h3>Accesorii</h3>
+                <p>Cagulă, mănuși și alte accesorii utile.</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="collections new">
+        <h2>Noutăți</h2>
+        <p>Produse proaspăt adăugate în gama noastră.</p>
+        <div class="grid">
+            <div class="collection">
+                <img src="poza19.jpg" alt="Costum Sport">
+                <h3>Costum Sport</h3>
+                <p>Design revizuit pentru sezonul 2025.</p>
+            </div>
+            <div class="collection">
+                <img src="poza18.jpg" alt="Guler Termic">
+                <h3>Guler Termic</h3>
+                <p>Protecție suplimentară pentru zilele reci.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Brand Moto Termic - Pre-prototip</p>
+    </footer>
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
+    <script src="site.js"></script>
+</body>
+</html>
