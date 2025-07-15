@@ -26,5 +26,17 @@ function initDarkMode() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', initDarkMode);
+function initAboutToggle() {
+  const btn = document.getElementById('more-tech');
+  const extra = document.querySelector('.tech-extra');
+  if (!btn || !extra) return;
+  btn.addEventListener('click', () => {
+    extra.classList.toggle('visible');
+    btn.textContent = extra.classList.contains('visible') ? 'Ascunde detalii' : 'Află mai multe';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  initDarkMode();
+  initAboutToggle();
+});
 

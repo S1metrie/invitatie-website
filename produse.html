@@ -34,77 +34,81 @@
     <p>Alege echipamentul care ți se potrivește din ofertele noastre actuale.</p>
     <p id="search-message"></p>
 
-    <h3>Seturi Vară - Femei (2 Piese)</h3>
-    <div class="product-grid">
-        <article class="produs">
-            <img src="poza19.jpg" alt="Set Vară Femei" loading="lazy">
-            <h3>Set Vară Femei</h3>
-            <span class="pret">299 RON</span>
-            <button class="add-to-cart" data-name="Set Vară Femei" data-price="299">Adaugă în coș</button>
-        </article>
-        <article class="produs">
-            <img src="poza19.jpg" alt="Set Vară Fete" loading="lazy">
-            <h3>Set Vară Fete</h3>
-            <span class="pret">289 RON</span>
-            <button class="add-to-cart" data-name="Set Vară Fete" data-price="289">Adaugă în coș</button>
-        </article>
+    <div class="filter-bar">
+        <button data-filter="all" class="active">Toate</button>
+        <button data-filter="femei">Femei</button>
+        <button data-filter="barbati">Bărbați</button>
+        <button data-filter="vara">Vară</button>
+        <button data-filter="iarna">Iarnă</button>
     </div>
 
-    <h3>Seturi Vară - Bărbați (2 Piese)</h3>
-    <div class="product-grid">
-        <article class="produs">
-            <img src="poza18.jpg" alt="Set Vară Bărbați" loading="lazy">
-            <h3>Set Vară Bărbați</h3>
-            <span class="pret">299 RON</span>
-            <button class="add-to-cart" data-name="Set Vară Bărbați" data-price="299">Adaugă în coș</button>
-        </article>
-        <article class="produs">
-            <img src="poza18.jpg" alt="Set Vară Băieți" loading="lazy">
-            <h3>Set Vară Băieți</h3>
-            <span class="pret">279 RON</span>
-            <button class="add-to-cart" data-name="Set Vară Băieți" data-price="279">Adaugă în coș</button>
-        </article>
-    </div>
-
-    <h3>Bluze Termice</h3>
-    <div class="product-grid">
-        <article class="produs">
-            <img src="https://via.placeholder.com/260x200" alt="Bluza" loading="lazy">
-            <h3>Bluza Termică</h3>
-            <span class="pret">199 RON</span>
-            <button class="add-to-cart" data-name="Bluza Termică" data-price="199">Adaugă în coș</button>
-        </article>
-    </div>
-
-    <h3>Pantaloni Termici</h3>
-    <div class="product-grid">
-        <article class="produs">
-            <img src="https://via.placeholder.com/260x200" alt="Pantaloni" loading="lazy">
-            <h3>Pantaloni Termici</h3>
-            <span class="pret">219 RON</span>
-            <button class="add-to-cart" data-name="Pantaloni Termici" data-price="219">Adaugă în coș</button>
-        </article>
-    </div>
-
-    <h3>Costum dintr-o piesă</h3>
-    <div class="product-grid">
-        <article class="produs">
-            <img src="poza18.jpg" alt="Costum Iarnă" loading="lazy">
-            <h3>Costum Termic Iarnă</h3>
+    <div class="product-grid" id="product-list">
+        <article class="produs" data-gender="femei" data-season="vara">
+            <img src="poza19.jpg" alt="Costum Vară Femei" loading="lazy">
+            <h3>Costum Termic Vară Femei</h3>
             <span class="pret">349 RON</span>
-            <button class="add-to-cart" data-name="Costum Termic Iarnă" data-price="349">Adaugă în coș</button>
+            <button class="add-to-cart" data-name="Costum Termic Vară Femei" data-price="349">Adaugă în coș</button>
+        </article>
+        <article class="produs" data-gender="barbati" data-season="vara">
+            <img src="poza18.jpg" alt="Costum Vară Bărbați" loading="lazy">
+            <h3>Costum Termic Vară Bărbați</h3>
+            <span class="pret">349 RON</span>
+            <button class="add-to-cart" data-name="Costum Termic Vară Bărbați" data-price="349">Adaugă în coș</button>
+        </article>
+        <article class="produs" data-gender="femei" data-season="iarna">
+            <img src="poza19.jpg" alt="Costum Iarnă Femei" loading="lazy">
+            <h3>Costum Termic Iarnă Femei</h3>
+            <span class="pret">399 RON</span>
+            <button class="add-to-cart" data-name="Costum Termic Iarnă Femei" data-price="399">Adaugă în coș</button>
+        </article>
+        <article class="produs" data-gender="barbati" data-season="iarna">
+            <img src="poza18.jpg" alt="Costum Iarnă Bărbați" loading="lazy">
+            <h3>Costum Termic Iarnă Bărbați</h3>
+            <span class="pret">399 RON</span>
+            <button class="add-to-cart" data-name="Costum Termic Iarnă Bărbați" data-price="399">Adaugă în coș</button>
+        </article>
+        <article class="produs" data-gender="femei" data-season="iarna">
+            <img src="https://via.placeholder.com/260x200" alt="Pantaloni Femei" loading="lazy">
+            <h3>Pantaloni Termici Femei</h3>
+            <span class="pret">219 RON</span>
+            <button class="add-to-cart" data-name="Pantaloni Termici Femei" data-price="219">Adaugă în coș</button>
+        </article>
+        <article class="produs" data-gender="barbati" data-season="iarna">
+            <img src="https://via.placeholder.com/260x200" alt="Pantaloni Bărbați" loading="lazy">
+            <h3>Pantaloni Termici Bărbați</h3>
+            <span class="pret">219 RON</span>
+            <button class="add-to-cart" data-name="Pantaloni Termici Bărbați" data-price="219">Adaugă în coș</button>
+        </article>
+        <article class="produs" data-gender="femei" data-season="iarna">
+            <img src="https://via.placeholder.com/260x200" alt="Bluză Femei" loading="lazy">
+            <h3>Bluza Termică Femei</h3>
+            <span class="pret">199 RON</span>
+            <button class="add-to-cart" data-name="Bluza Termică Femei" data-price="199">Adaugă în coș</button>
+        </article>
+        <article class="produs" data-gender="barbati" data-season="iarna">
+            <img src="https://via.placeholder.com/260x200" alt="Bluză Bărbați" loading="lazy">
+            <h3>Bluza Termică Bărbați</h3>
+            <span class="pret">199 RON</span>
+            <button class="add-to-cart" data-name="Bluza Termică Bărbați" data-price="199">Adaugă în coș</button>
+        </article>
+        <article class="produs" data-gender="unisex" data-season="iarna">
+            <img src="poza2.jpg" alt="Cagulă" loading="lazy">
+            <h3>Cagulă Termică</h3>
+            <span class="pret">79 RON</span>
+            <button class="add-to-cart" data-name="Cagulă Termică" data-price="79">Adaugă în coș</button>
         </article>
     </div>
+
     <section class="similar">
         <h2>Produse similare</h2>
         <div class="product-grid">
-            <article class="produs">
+            <article class="produs" data-gender="barbati" data-season="vara">
                 <img src="poza18.jpg" alt="Model Similar" loading="lazy">
                 <h3>Model Similar</h3>
                 <span class="pret">259 RON</span>
                 <button class="add-to-cart" data-name="Model Similar" data-price="259">Adaugă în coș</button>
             </article>
-            <article class="produs">
+            <article class="produs" data-gender="femei" data-season="vara">
                 <img src="poza19.jpg" alt="Alt Model" loading="lazy">
                 <h3>Alt Model</h3>
                 <span class="pret">189 RON</span>
